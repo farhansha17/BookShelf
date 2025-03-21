@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="Books/png" href="books.png"> 
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "navbar">
+         <h1>Bookshelf</h1>
+    </div>
+
+    <div class = "container">
+        <div class="box-container">
+            <h2>The Alchemist</h2>
+            <h5>Paulo Coelho</h5>
+            <p>A young shepherd, Santiago, sets out on a journey to find a hidden treasure. Along the way, he learns about fate, dreams, and self-discovery. The Alchemist is an inspiring tale about following one’s heart and trusting the journey of life.</p> 
+            <button class="btn" onclick="deleteBook(event)">DELETE</button>
+        </div>
+    </div>
+    <div>
+        <button class="Add-btn">+</button>
+    </div>
+    <div class ="overlay"></div>
+    <div class ="popup">
+        <h2>Add Book</h2>
+        <input type="text" placeholder="Book Name" id="bookName">
+        <input type="text" placeholder="Author Name" id="authorName">
+        <textarea placeholder="Description" id="description"></textarea>
+        <button class="AddBook-btn">ADD</button>
+        <button id="Close-btn">CLOSE</button>
+    </div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
